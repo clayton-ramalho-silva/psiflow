@@ -1,0 +1,1 @@
+[02-Jul-2025 22:27:52 UTC] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 33554432 bytes) in /home1/flav6095/painelasppe.com.br/vendor/laravel/framework/src/Illuminate/Container/Util.php on line 54
