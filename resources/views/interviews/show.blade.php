@@ -148,8 +148,9 @@
                         </div>
 
                         <div class="mb-6 bloco-data">
-                            <p>
-                                <b>Entrevistador:</b> {{ $interview->recruiter->name ? $interview->recruiter->name : Auth::user()->name }}
+                            <p>                                
+                                <b>Entrevistador:</b> 
+                                {{ $interview->recruiter ? $interview->recruiter->name : Auth::user()->name }}
                             </p>
                         </div>
 
