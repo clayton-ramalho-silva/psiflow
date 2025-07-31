@@ -17,4 +17,6 @@ yarn-error.log
 /.idea
 /.vscode
 .notes.txt
-
+/public/documents
+/public/images
+/public/img

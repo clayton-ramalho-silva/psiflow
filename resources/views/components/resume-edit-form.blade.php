@@ -230,8 +230,8 @@
                 
                 <h4 class="fw-normal mb-4 mt-4">Endereço</h4>
 
-                <div class="col-12 form-campo">
-                    <div class="mb-3 position-relative" style="width: 30%">
+                <div class="col-4 form-campo">
+                    <div class="mb-3 position-relative">
                         <i class="fas fa-spinner"></i>
                         <input type="text" placeholder="CEP" class="floatlabel form-control" id="cep" name="cep"  value="{{ $resume->contato->cep }}">
                         @error('cep') <div class="alert alert-danger">{{ $message }}</div> @enderror
@@ -245,35 +245,35 @@
                     </div>
                 </div>
 
-                <div class="col-2 form-campo">
+                <div class="col-3 form-campo">
                     <div class="mb-3">
                         <input type="text" placeholder="Número" class="floatlabel form-control" id="numero" name="numero"  value="{{ $resume->contato->numero }}">
                         @error('numero') <div class="alert alert-danger">{{ $message }}</div> @enderror
                     </div>
                 </div>
 
-                <div class="col-2 form-campo">
+                <div class="col-4 form-campo">
                     <div class="mb-3">
                         <input type="text" placeholder="Complemento" class="floatlabel form-control" id="complemento" name="complemento"  value="{{ $resume->contato->complemento }}">
                         @error('complemento') <div class="alert alert-danger">{{ $message }}</div> @enderror
                     </div>
                 </div>
 
-                <div class="col-4 form-campo">
+                <div class="col-5 form-campo">
                     <div class="mb-3">
                         <input type="text" placeholder="Bairro" class="floatlabel form-control" id="bairro" name="bairro"  value="{{ $resume->contato->bairro }}">
                         @error('bairro') <div class="alert alert-danger">{{ $message }}</div> @enderror
                     </div>
                 </div>
 
-                <div class="col-4 form-campo">
+                <div class="col-6 form-campo">
                     <div class="mb-3">
                         <input type="text" placeholder="Cidade" class="floatlabel form-control" id="cidade" name="cidade"  value="{{ $resume->contato->cidade }}">
                         @error('cidade') <div class="alert alert-danger">{{ $message }}</div> @enderror
                     </div>
                 </div>
 
-                <div class="mb-3 form-campo col-4">
+                <div class="col-6 mb-3 form-campo">
                     <div class="floatlabel-wrapper ">
                         <label for="uf" class="label-floatlabel" class="form-label floatlabel-label">UF</label>
                         <select name="uf" id="uf" class="form-select active-floatlabel" >
