@@ -142,3 +142,11 @@ font-size:11px;
 .form-padrao#form-interview .form-textarea .label-floatlabel{
     background-color: #fff;
 }
+
+
+  a.logo-psi{
+        font-size: 30px !important;
+        font-weight: bold !important;
+        color: #000 !important;
+        text-decoration: none !important;
+    }

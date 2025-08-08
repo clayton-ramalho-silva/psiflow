@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Exports\CandidatesByJobExport;
 use App\Http\Controllers\AjaxController;
+use App\Http\Controllers\PacienteController;
 use App\Http\Controllers\PublicResumeController;
 use App\Http\Controllers\ResumeImportController;
 use App\Http\Controllers\SelectionController;
@@ -43,6 +44,19 @@ Route::post('cadastro-curriculo', [PublicResumeController::class, 'store'])->nam
 
 
 Route::middleware(['auth'])->group(function(){
+
+    // Rotas para PsiFlow
+
+    // Pacientes
+    Route::resource('pacientes', PacienteController::class);
+
+
+
+
+
+
+
+
     // Jobs
     
     Route::put('/jobs/{job}/updateDataEntrevistaEmpresa', [JobController::class, 'updateDataEntrevistaEmpresa'])->name('jobs.updateDataEntrevistaEmpresa');

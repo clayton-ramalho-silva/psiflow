@@ -1,6 +1,6 @@
 <div class="menu-site">
 
-    <a href="/" class="logo">ASPPE - Sistema</a>
+    <a href="/" class="logo-psi">PsiFlow</a>
    
 
     <span class="btMenu"><b></b></span>
@@ -13,6 +13,19 @@
             </svg>
 
             <span>Dashboard</span>
+        </a>
+
+        <a href="{{ route('pacientes.index') }}"{!! request()->is('pacientes/*') || request()->is('pacientes') ? ' class="ativo"' : '' !!}>
+
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="black" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" fill="none"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" fill="none"></path>
+            </svg>
+
+
+            <span>Pacientes</span>
         </a>
 
         <a href="{{ route('companies.index') }}"{!! Request::is('companies','companies/*') ? ' class="ativo"' : '' !!}>
@@ -112,3 +125,4 @@
     </form>
 
 </div>
+
